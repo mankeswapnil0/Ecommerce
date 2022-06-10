@@ -1,0 +1,245 @@
+.productDetails{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 6vmax;
+}
+.images{
+    width: 100%;
+    max-height: 100%;
+}
+.carouselImage{
+    object-fit: contain;
+    width: 100%;
+    height: 70vmin;
+    max-height: 100%;
+} 
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2vmax;
+    box-sizing: border-box;
+}
+.productDetails > div:last-child{
+    align-items: flex-start;
+}
+.detailsBlock1 > h2{
+    color: rgb(54, 54, 54);
+    font: 600 1.6vmax;
+}
+.detailsBlock1 > p{
+    color: rgb(54, 54, 54);
+    font: 200 1vmax cursive;
+}
+.detailsBlock2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.205);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    width: 70%;
+    padding: 1vmax 0;
+}
+.detailsBlock2-span{
+    font: 200;
+    font-size: 1vmax;
+    color: rgba(0, 0, 0, 0.699);
+}
+.detailsBlock3{
+    width: 70%;
+}
+.detailsBlock3 > h1{
+    color: rgba(17, 17, 17, 0.795);
+    font: 400 1.8vmax;
+    margin: 1vmax 0;
+}
+.detailsBlock3-1{
+    display: flex;
+    align-items: center;
+}
+.detailsBlock3-1-1 > button{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 0.5vmax;
+    cursor: pointer;
+    color: white;
+    transition: 500ms all;
+}
+.detailsBlock3-1-1 > button:hover{
+    background-color: rgba(0, 0, 0, 0.767);
+}
+.detailsBlock3-1-1 > input{
+    border: none;
+    padding: 0.5vmax;
+    width: 1.3vmax;
+    text-align: center;
+    outline: none;
+    font: 400 0.8vmax;
+    color: rgba(0, 0, 0, 0.74);
+}
+.detailsBlock3-1 > button:last-child{
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: tomato;
+    transition: 500ms all;
+    font: 500 0.7vmax;
+    border-radius: 20px;
+    padding: 0.5vmax 2vmax;
+    margin: 1vmax;
+    outline: none;
+}
+.detailsBlock3-1 > button:last-child:hover{
+    background-color: rgb(214, 84, 61);
+}
+.detailsBlock3 > p{
+    border-top: 1px solid rgba(0, 0, 0, 0.205);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    padding: 1vmax 0;
+    color: rgba(0, 0, 0, 0.651);
+    font: 400 1vmax;
+    margin: 1vmax 0;
+}
+.detailsBlock4{
+    color: rgba(0, 0, 0, 0.897);
+    font: 500 1.2vmax;
+}
+.detailsBlock4 > p{
+    color: rgba(0, 0, 0, 0.534);
+    font: 300 0.8vmax;
+}
+.submitReview{
+    border: none;
+    background-color: tomato;
+    font: 500 0.7vmax;
+    border-radius: 20px;
+    padding: 0.6vmax 2vmax;
+    margin: 1vmax 0;
+    color: white;
+    cursor: pointer;
+    transition: 500ms all;
+    outline: none;
+}
+.submitReview:hover{
+    background-color: rgb(197, 68, 45);
+    transform: scale(1.1);
+}
+.submitDialog{
+    display: flex;
+    flex-direction: column;
+}
+.submitDialogTextArea{
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    margin: 1vmax 0;
+    outline: none;
+    padding: 1rem;
+    font: 300;
+    font-size: 1rem;
+}
+.reviewsHeading{
+    color: black;
+    font: 500 1.4vmax;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+    padding: 1vmax;
+    width: 20vmax;
+    margin: auto;
+    margin-bottom: 4vmax;
+}
+.reviews{
+    display: flex;
+    overflow: auto;
+}
+.reviewCard{
+    flex: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.226);
+    border: 1px solid rgba(56, 56, 56, 0.116);
+    width: 30vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vmax;
+    padding: 3vmax;
+}
+.reviewCard > img{
+    width: 5vmax;
+}
+.reviewCard > p{
+    color: rgba(0, 0, 0, 0.836);
+    font: 600 1.2vmax;
+}
+.reviewCardComment{
+    color: rgba(0, 0, 0, 0.446);
+    font: 300 1vmax cursive;
+}
+.noReviews{
+    font: 400 1.3vmax;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.548);
+}
+@media screen and (max-width: 600px) {
+    .productDetails{
+        flex-direction: column;
+    }
+    .productDetails> div:last-child{
+        align-items: center;
+    }
+    .detailsBlock1 > h2{
+        font-size: 2.8vmax;
+        text-align: center;
+    }
+    .detailsBlock1 > p{
+        font-size: 1.4vmax;
+        text-align: center;
+    }
+    .detailsBlock2{
+        justify-content: center;
+    }
+    .detailsBlock2 > span{
+        font-size: 1.5vmax;
+    }
+    .detailsBlock3 > h1{
+        font: 700 3vmax;
+        text-align: center;
+    }
+    .detailsBlock3-1{
+        flex-direction: column;
+    }
+    .detailsBlock3-1-1{
+        padding: 2vmax 0;
+    }
+    .detailsBlock3-1-1 > button{
+        padding: 1.2vmax;
+        width: 4vmax;
+    }
+    .detailsBlock3-1-1 > input{
+        padding: 1.5vmax;
+        width: 3vmax;
+        font: 400 1.8vmax;
+    }
+    .detailsBlock3 > p{
+        text-align: center;
+    }
+    .detailsBlock4{
+        font: 500 2.5vmax;
+    }
+    .detailsBlock4 > p{
+        font: 300 1.8vmax;
+    }
+    .reviewsHeading{
+        margin-top: 25vmin;
+    }
+    .reviewCard > p{
+        font: 600;
+        font-size: 3vw;
+    }
+    .reviewCardComment{
+        font: 300;
+        font-size: 5vw;
+    }
+}
